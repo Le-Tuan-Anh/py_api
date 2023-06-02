@@ -1,4 +1,4 @@
-FROM ubuntu-latest
+FROM ubuntu:latest
 
 COPY app.py app.py
 COPY requirements.txt requirements.txt
