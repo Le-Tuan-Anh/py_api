@@ -1,0 +1,13 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: pip install -r requirements.txt
+      - run: python app.py
